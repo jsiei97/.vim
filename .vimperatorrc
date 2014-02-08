@@ -1,0 +1,20 @@
+"2.2 (created: 2009/10/28 19:04:27)
+" https://addons.mozilla.org/en-US/firefox/addon/4891
+" http://vimperator.org/
+
+"set guioptions=rbmTB
+set guioptions+=mTB
+
+set runtimepath=~/.vimperator
+source! ~/.vimperatorrc.local
+
+" vim: set ft=vimperator:
+
+"Map Ctrl + n for new windows
+map <C-n> <C-v><C-n>
+
+"Map Ctrl + t for new tabs
+map <C-t> :tabopen<Cr>
+
+"Map paste operation normally.
+imap <C-v> <C-v> 
