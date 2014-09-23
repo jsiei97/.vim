@@ -39,9 +39,11 @@ cmap w!! %!sudo tee > /dev/null %
 
 " Build and view src
 nmap <F7> :make<CR>
+"nmap <F7> :make \| copen<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :NERDTreeToggle<CR>
 
+"nmap <F12> :set mp:build.sh\ -c \| make \| copen
 
 " Add the GPL fileheader
 :nmap gpl :read ~/.vim/license/gpl.txt <CR>
