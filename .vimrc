@@ -47,6 +47,7 @@ nmap <F9> :NERDTreeToggle<CR>
 
 " Add the GPL fileheader
 :nmap gpl :read ~/.vim/license/gpl.txt <CR>
+:nmap agpl :read ~/.vim/license/agpl.txt <CR>
 
 set tags=tags;/
 nmap <F1> :exe 'tjump ' . expand('<cword>')<CR>
