@@ -28,6 +28,10 @@ autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 " lets map them to gs...
 map gs :%s///gc
 
+" Search for visually selected text
+" http://vim.wikia.com/wiki/Search_for_visually_selected_text
+vnoremap // y/<C-R>"<CR>
+
 " Cleanup aka remove whitespace
 map gc :%s/\s\+$//
 
