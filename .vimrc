@@ -41,6 +41,10 @@ cmap w!! %!sudo tee > /dev/null %
 " Get the current filename
 :nmap cp :let @" = expand("%") <CR>
 
+" Shift print scrn creates a pdf with filename.pdf in cwd
+" :help :map-special-keys
+:nmap <S-t_%9> :hardcopy > %:t.ps <CR> :!ps2pdf %:t.ps <CR> 
+
 " Build and view src
 nmap <F7> :make<CR>
 "nmap <F7> :make \| copen<CR>
